@@ -21,6 +21,18 @@ On multi-monitor setups, macOS moves the Dock to whichever screen you push the c
 - macOS 13 Ventura or later (Apple Silicon or Intel)
 - Accessibility permission (needed to watch and adjust cursor movement)
 
+## Download
+
+Grab `DockPin-x.y.zip` from the [latest release](https://github.com/lwkoon/DockPin/releases/latest), unzip it and move **DockPin.app** to `/Applications`.
+
+The app is not notarized by Apple, so macOS will block the first launch. Either right-click DockPin.app → **Open** → **Open**, or run:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/DockPin.app
+```
+
+Then enable DockPin in **System Settings → Privacy & Security → Accessibility**.
+
 ## Build & install
 
 Needs the Xcode Command Line Tools (`xcode-select --install`).
